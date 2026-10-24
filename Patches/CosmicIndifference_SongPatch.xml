@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--
+    替换通关结局面板音乐。
+    原版链路：ShipCountdown -> GameVictoryUtility.ShowCredits(..., SongDefOf.EndCreditsSong, ...)
+              -> Screen_Credits.ForcePlaySong(EndCreditsSong)
+    clipPath 相对于本 mod 的 Sounds 目录，不带扩展名。
+    音频：Sounds/CosmicIndifference/cosmic_indifference_ending.mp3
+  -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/SongDef[defName="EndCreditsSong"]/clipPath</xpath>
+    <value>
+      <clipPath>CosmicIndifference/cosmic_indifference_ending</clipPath>
+    </value>
+  </Operation>
+
+</Patch>

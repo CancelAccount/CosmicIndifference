@@ -1,0 +1,11 @@
+# 打包输出与暂存目录
+dist/
+
+# 1.7 资源包（由游戏内上传器 bake 生成，不入库）
+Assets.zip
+Assets.zip.*
+
+# 系统与编辑器临时文件
+Thumbs.db
+desktop.ini
+.vs/
